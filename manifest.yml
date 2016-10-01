@@ -1,0 +1,12 @@
+---
+declared-services:
+  php-mysql-db:
+    label: cleardb
+    plan: spark
+applications:
+- disk_quota: 512M
+  name: messenger
+  instances: 1
+  memory: 512M
+  services:
+    - php-mysql-db
