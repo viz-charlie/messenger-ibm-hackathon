@@ -23,7 +23,7 @@
 		$mysql_username = $db->username; 
 		$mysql_password = $db->password;
 	}
-	echo "Debug: " . $mysql_database . " " . $mysql_server_name . " " .  $mysql_username . " " .  $mysql_password . "\n";
+	//echo "Debug: " . $mysql_database . " " . $mysql_server_name . " " .  $mysql_username . " " .  $mysql_password . "\n";
 
 	$mysqli = new mysqli($mysql_server_name, $mysql_username, $mysql_password, $mysql_database);
 	if ($mysqli->connect_errno) {
