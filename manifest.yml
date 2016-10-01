@@ -4,9 +4,9 @@ declared-services:
     label: cleardb
     plan: spark
 applications:
-- disk_quota: 512M
+- disk_quota: 150M
   name: messenger
   instances: 1
-  memory: 512M
+  memory: 150M
   services:
     - php-mysql-db
